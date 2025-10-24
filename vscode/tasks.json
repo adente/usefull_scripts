@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Change File Extensions",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-File", "<script_location>/ChangeExtension.ps1",
+                "-OldExtension", "txt",
+                "-NewExtension", "log"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
